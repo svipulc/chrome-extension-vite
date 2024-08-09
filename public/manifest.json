@@ -1,0 +1,16 @@
+{
+  "name": "vite be test",
+  "description": "testing vite config",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "vite be test",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
