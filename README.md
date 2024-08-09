@@ -1,30 +1,107 @@
-# React + TypeScript + Vite
+# Chrome Extension Boilerplate with React, TypeScript, and Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a boilerplate for creating Chrome extensions using React, TypeScript, and Vite. It provides a modern development environment with hot module replacement (HMR) for a smoother development experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ **Vite** - Lightning fast build tool
+- ⚛️ **React** - A popular library for building user interfaces
+- 🔷 **TypeScript** - For type-safe code
+- 🧩 **Chrome Extension Manifest V3** - The latest manifest version for Chrome extensions
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Node.js (version 14 or newer)
+- npm or yarn
+- Google Chrome browser
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone this repository:
+
+   ```markdown
+   git clone https://github.com/svipulc/chrome-extension-vite.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```markdown
+   cd chrome-extension-boilerplate
+   ```
+
+3. Install dependencies:
+
+   ```markdown
+   npm install
+   ```
+
+   or
+
+   ```markdown
+   yarn
+   ```
+
+4. Start the development server:
+
+   ```markdown
+   npm run dev
+   ```
+
+   or
+
+   ```markdown
+   yarn dev
+   ```
+
+5. Load the extension in Chrome:
+   - Open Chrome and navigate to `chrome://extensions`
+   - Enable "Developer mode" in the top right corner
+   - Click "Load unpacked" and select the `dist` folder in your project directory
+
+## Project Structure
+
+```markdown
+├── public/
+│ ├── manifest.json
+│ └── icon.png
+├── src/
+│ ├── popup/
+│ │ ├── Popup.tsx
+│ │ └── index.html
+│ ├── options/
+│ │ ├── Options.tsx
+│ │ └── index.html
+│ ├── background/
+│ │ └── index.ts
+│ ├── components/
+│ ├── utils/
+│ └── content/
+│ └── index.ts
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Building for Production
+
+To create a production build, run:
+
+```markdown
+npm run build
+```
+
+or
+
+```markdown
+yarn build
+```
+
+This will generate a `dist` folder with your compiled extension, ready to be published to the Chrome Web Store.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. converte thi

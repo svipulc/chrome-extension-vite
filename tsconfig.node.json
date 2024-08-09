@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "strict": true
+    "composite": true, // Enable composite projects, allowing for incremental builds and project references
+    "skipLibCheck": true, // Skip type checking of all declaration files to speed up compilation
+    "module": "ESNext", // Specify the module system to use (latest ES module syntax)
+    "moduleResolution": "bundler", // Use the bundler module resolution strategy for better compatibility with bundlers
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true // Enable all strict type checking options for better type safety
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"] // Include the vite.config.ts file for compilation
 }
